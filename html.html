@@ -3,6 +3,9 @@
 <head>
   <title>Page Title</title>
   <meta charset="UTF-8">
+  <meta name="description" content="Some content">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
   <!-- INTERNAL CSS:
   <style>
   body {background-color: powderblue;}
@@ -13,6 +16,17 @@
   <!-- EXTERNAL CSS:
   <link rel="stylesheet" href="styles.css">
   -->
+  <style>
+  table, th, td {
+    border: 1px solid black;
+  }
+  div.cities {
+    background-color: blue;
+    color: white;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+}
+  </style>
 </head>
 <body>
   <!-- This is a comment -->
@@ -22,6 +36,34 @@
   <a href="#">This is a link</a>
   <p>Creative Commons images: http://search.creativecommons.org/</p>
   <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Ryan_Lane_Coding_Shot.jpg" alt="Image's alternative text." style="width:304px;height:228px;">  <!-- width="200" height="150" -->
+  <ul style="list-style-type:disc">
+    <li>Coffee</li>
+    <dd>- black hot drink</dd>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <ol type="A">
+    <li>Coffee</li>
+    <dd>- black hot drink</dd>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <h3>Block elements (div):</h3>
+  <div style="background-color:green;color:white;padding:10px;">
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+  <div class="cities">
+<h2>London</h2>
+<p>London is the capital of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+<div class="cities">
+<h2>Paris</h2>
+<p>Paris is the capital and most populous city of France.</p>
+</div>
+  <h3>Block elements (span):</h3>
+  <h2>My <span style="color:red">Important</span> Heading</h2>
   <hr>
 <h3 style="color:green;">H3: Lorem ipsum dolor sit amet</h3>
 <h4 style="color:red;">H4: Lorem ipsum dolor sit amet</h4>
@@ -87,6 +129,70 @@ Einstein wrote: <var>E</var> = <var>m</var><var>c</var><sup>2</sup>.
 <h6 style="text-align:center;">H6: Lorem ipsum dolor sit amet</h6>
   <p style="font-size:130%;">Paragraph 3: Aenean porta sem velit, sit amet tincidunt dui facilisis eu. Praesent et pulvinar mauris. Maecenas vitae fringilla lacus, ac hendrerit magna. <br/>Break: In porta porta nibh. Curabitur nec consequat ipsum, vel placerat nisi. Suspendisse rutrum feugiat tortor, non congue tellus viverra vel. Fusce nunc nibh, blandit sed ornare ut, tincidunt quis nunc.</p>
 <a href="#" target="_blank">This is a third link</a>
+<p></p>
 <a href="html.html#goto_h2">Jump to H2</a>
+<h3>Tables:</h3>
+<table style="width:50%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<p></p>
+<table style="width:50%">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+<p></p>
+<table style="width:50%">
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+<p></p>
+<table style="width:50%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+<h3>Iframe:</h3>
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
 </body>
 </html>
