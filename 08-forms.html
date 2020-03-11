@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+</head>
+<body>
+	<h1>Forms</h1>
+	<!-- action: where the form sends data to -->
+	<!-- method: what HTTP method (get/post) -->
+	<form action="" method="GET">
+
+		<!-- One way to assign a label -->
+		<div>
+			<label>
+				Email: 
+				<input type="email" name="email" placeholder="email here" required>
+			</label>
+
+			<!-- A better way to assign a label -->
+			<label for="pass">Password: </label>
+			<input type="password" name="password" placeholder="password here" id="pass">
+		</div>
+
+		<!-- Other inputs -->
+		<div>
+		<p>Do you prefer cats or dogs?</p>
+		<label for="cats">Cats </label>
+		<input type="radio" name="choice" id="cats" value="catsSelected">
+		<label for="dogs">Dogs </label>
+		<input type="radio" name="choice" id="dogs" value="dogsSelected">
+		
+		<p>
+		<label for="colour">Pick your favourite colour:</label>
+		<select name="colour">
+			<option value="RED" id="red">Red</option>
+			<option value="GREEN" id="green">Green</option>
+			<option value="YELLOW" id="yellow">Yellow</option>
+			<option value="BLACK" id="black">Black</option>
+			<option value="UNICORN" id="unicorn">Unicorn</option>
+		</select>
+		</p>
+		</div>
+
+		<!-- Text inputs -->
+		<div>
+			<p>
+				<input type="text" name="inputText" placeholder="This is a single line text">
+			</p>
+
+			<p>
+				<textarea name="textArea" rows="10" cols="30">This is a multiple line text area...</textarea>
+			</p>
+		</div>
+
+		<div>
+			<!-- One way to insert a button -->
+			<button>Submit (v1)</button>
+			<!-- A better way to insert a button -->
+			<input type="Submit" name="">
+		</div>
+
+	</form>
+</body>
+</html>

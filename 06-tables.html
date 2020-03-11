@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tables</title>
+</head>
+<body>
+<!--
+ 	Animal	Colour
+	==============
+	Dog		Black
+	Cat		Green
+	Horse	Brown 
+-->
+
+	<h3>Old way:</h3>
+	<table border="1"> <!-- This border should go in the CSS file instead of the HTML file. -->
+		<tr>
+			<th>Animal</th>
+			<th>Colour</th>
+		</tr>
+		<tr>
+			<td>Dog</td>
+			<td>Black</td>
+		</tr>
+		<tr>
+			<td>Cat</td>
+			<td>Green</td>
+		</tr>
+		<tr>
+			<td>Horse</td>
+			<td>Browm</td>
+		</tr>
+	</table>
+
+	<h3>HTML5 New way:</h3>
+	<table border="1"> <!-- This border should go in the CSS file instead of the HTML file. -->
+		<thead>
+			<tr>
+				<th>Animal</th>
+				<th>Colour</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Dog</td>
+				<td>Black</td>
+			</tr>
+			<tr>
+				<td>Cat</td>
+				<td>Green</td>
+			</tr>
+			<tr>
+				<td>Horse</td>
+				<td>Browm</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

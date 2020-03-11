@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A beautiful form</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<!-- Names -->
+		<div>
+			<label for="firstName">First Name: </label>
+			<input type="text" name="FIRSTNAME" id="firstName" placeholder="John" required>
+			<label for="lastName">Last Name: </label>
+			<input type="text" name="LASTNAME" id="lastName" placeholder="Smith" required>
+		</div>
+
+		<!-- Gender -->
+		<div>
+			Gender: 
+			<label for="male">Male</label>
+			<input type="radio" name="GENDER" id="male" value="maleSel">
+			<label for="female">Female</label>
+			<input type="radio" name="GENDER" id="female" value="femaleSel">
+			<label for="other">Other</label>
+			<input type="radio" name="GENDER" id="other" value="otherSel" checked>
+		</div>
+
+		<!-- Email and Pass -->
+		<div>
+			<label for="email">Email: </label>
+			<input type="email" name="EMAIL" id="email" placeholder="your@email.com" required>
+			<label for="password">Password: </label>
+			<input type="password" name="PASSWORD" id="password" placeholder="between 5 and 10 letters" required minlength="5" maxlength="10" title="Please enter between 5 and 10 characters.">
+		</div>
+
+		<!-- Birthday -->
+		<div>
+			<label for="birthday">Birthday: </label>
+			<select name="birthdayMonth">
+				<option value="notSelected">- Month -</option>
+				<option value="Jan">Jan</option>
+				<option value="Feb">Feb</option>
+				<option value="Mar">Mar</option>
+				<option value="other">...</option>
+			</select>
+			<select name="birthdayDay">
+				<option value="notSelected">- Day -</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="other">...</option>
+			</select>
+			<select name="birthdayYear">
+				<option value="notSelected">- Year -</option>
+				<option>2020</option>
+				<option>2019</option>
+				<option>2018</option>
+				<option value="other">...</option>
+			</select>
+		</div>
+		
+		<!-- T & C -->
+		<div>
+			<label for="checkBox">I agree to the terms and conditions</label>
+			<input type="checkbox" name="checkBox" value="agree" required>
+		</div>
+
+		<!-- Submit -->
+		<input type="submit">
+	</form>
+
+	<!-- 
+	file:///D:/OneDrive/Programming%20and%20Analytics/002%20-%20Web%20Development/Excercises%20and%20Projects/09-4th-exercise.html
+	?
+	FIRSTNAME=asd&
+	LASTNAME=asd&
+	GENDER=otherSel&
+	EMAIL=damian.demasi.1%40gmail.com&
+	PASSWORD=asdasd&
+	birthdayMonth=Jan&
+	birthdayDay=1&
+	birthdayYear=2020&
+	checkBox=agree
+	 -->
+</body>
+</html>
